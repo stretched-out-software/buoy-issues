@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <key>BBEditDocumentType</key>
+    <string>CodelessLanguageModule</string>
+
+    <key>BBLMLanguageDisplayName</key>
+    <string>Buoy</string>
+
+    <key>BBLMLanguageCode</key>
+    <string>Buoy</string>
+
+    <key>BBLMSuffixMap</key>
+    <array>
+        <dict>
+            <key>BBLMLanguageSuffix</key>
+            <string>.bui</string>
+        </dict>
+        <dict>
+            <key>BBLMLanguageSuffix</key>
+            <string>.bas</string>
+        </dict>
+    </array>
+
+    <key>BBLMColorsSyntax</key>      <true/>
+    <key>BBLMScansFunctions</key>    <true/>
+    <key>BBLMIsCaseSensitive</key>   <false/>
+    <key>BBLMSupportsTextCompletion</key><true/>
+
+    <key>BBLMCommentLineDefault</key>
+    <string>'</string>
+
+    <key>BBLMKeywordList</key>
+    <array>
+        <string>AddressOf</string>
+        <string>Alias</string>
+        <string>And</string>
+        <string>Array</string>
+        <string>As</string>
+        <string>Async</string>
+        <string>Await</string>
+        <string>BitCast</string>
+        <string>Boolean</string>
+        <string>ByRef</string>
+        <string>ByVal</string>
+        <string>Byte</string>
+        <string>Case</string>
+        <string>Catch</string>
+        <string>Class</string>
+        <string>Color</string>
+        <string>Console</string>
+        <string>Const</string>
+        <string>Continue</string>
+        <string>CString</string>
+        <string>CType</string>
+        <string>Declare</string>
+        <string>Desktop</string>
+        <string>Dim</string>
+        <string>Directory</string>
+        <string>Do</string>
+        <string>Double</string>
+        <string>Else</string>
+        <string>ElseIf</string>
+        <string>End</string>
+        <string>Enum</string>
+        <string>Exit</string>
+        <string>Export</string>
+        <string>Extension</string>
+        <string>False</string>
+        <string>File</string>
+        <string>Final</string>
+        <string>For</string>
+        <string>Function</string>
+        <string>Get</string>
+        <string>If</string>
+        <string>Implements</string>
+        <string>Import</string>
+        <string>Inherits</string>
+        <string>Int8</string>
+        <string>Int16</string>
+        <string>Int32</string>
+        <string>Int64</string>
+        <string>Int128</string>
+        <string>Integer</string>
+        <string>Is</string>
+        <string>Let</string>
+        <string>Lib</string>
+        <string>Loop</string>
+        <string>Map</string>
+        <string>Match</string>
+        <string>Math</string>
+        <string>Me</string>
+        <string>Mod</string>
+        <string>Module</string>
+        <string>New</string>
+        <string>Nil</string>
+        <string>None</string>
+        <string>Not</string>
+        <string>Of</string>
+        <string>On</string>
+        <string>Open</string>
+        <string>Optional</string>
+        <string>Or</string>
+        <string>Override</string>
+        <string>Packed</string>
+        <string>Path</string>
+        <string>Private</string>
+        <string>Property</string>
+        <string>Protected</string>
+        <string>Ptr</string>
+        <string>Public</string>
+        <string>Queue</string>
+        <string>Random</string>
+        <string>Result</string>
+        <string>Return</string>
+        <string>Select</string>
+        <string>Self</string>
+        <string>Sequential</string>
+        <string>Set</string>
+        <string>Shl</string>
+        <string>Short</string>
+        <string>Shr</string>
+        <string>Single</string>
+        <string>Some</string>
+        <string>Stack</string>
+        <string>Static</string>
+        <string>StdErr</string>
+        <string>StdIn</string>
+        <string>StdOut</string>
+        <string>Step</string>
+        <string>String</string>
+        <string>Structure</string>
+        <string>Sub</string>
+        <string>Then</string>
+        <string>Throw</string>
+        <string>To</string>
+        <string>True</string>
+        <string>Try</string>
+        <string>UInt8</string>
+        <string>UInt16</string>
+        <string>UInt32</string>
+        <string>UInt64</string>
+        <string>UInt128</string>
+        <string>UInteger</string>
+        <string>Unit</string>
+        <string>Until</string>
+        <string>UShort</string>
+        <string>Var</string>
+        <string>Web</string>
+        <string>When</string>
+        <string>Where</string>
+        <string>While</string>
+        <string>With</string>
+        <string>Xor</string>
+    </array>
+
+    <key>BBLMPredefinedNameList</key>
+    <array>
+        <string>Ok</string>
+        <string>Err</string>
+        <string>Print</string>
+        <string>Assert</string>
+    </array>
+
+    <key>Language Features</key>
+    <dict>
+        <key>Identifier and Keyword Character Class</key>
+        <string>A-Za-z0-9_</string>
+
+        <key>Comment Pattern</key>
+        <string><![CDATA[(?P<comment>(?:'''|//|')[^\n]*|/\*(?:[^*]|\*(?!/))*\*/)]]></string>
+
+        <key>String Pattern</key>
+        <string><![CDATA[(?P<string>"(?:[^"\\\n]|\\.)*")]]></string>
+
+        <key>Function Pattern</key>
+        <string><![CDATA[(?P<function>(?:(?:Public|Private|Protected|Override|Async|Shared|Export)\s+)*(?:Function|Sub)\s+(?P<function_name>[A-Za-z_][A-Za-z0-9_]*)(?:\s+Of\s+[A-Za-z_][A-Za-z0-9_]*)?\s*\([^)]*\)(?:\s+As\s+[^\n]+)?)]]></string>
+
+        <key>Skip Pattern</key>
+        <string><![CDATA[(?P>string)|(?P>comment)]]></string>
+    </dict>
+
+</dict>
+</plist>
