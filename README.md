@@ -45,6 +45,12 @@ Function Area(r As Double) As Double
 End Function
 ```
 
+Optional chaining lets you guard member access without an explicit nil check:
+
+```basic
+Var name = user?.Profile?.DisplayName   ' Nil if user or Profile is Nil
+```
+
 ---
 
 ## Supported platforms
@@ -145,9 +151,9 @@ The complete cross-target toolchain is well under 100 MB.
 
 Buoy is being built in stages. Broad direction, subject to change:
 
-- **Now:** the compiler, language server, and per-platform native runtimes; the `.buipkg` library-packaging format (targeted for v0.5) so plugin authors can ship first-class bindings.
-- **Next:** a Foundation-style standard library (file paths/URLs, HTTP, dates/times), and object-oriented language features.
-- **Later:** automated binding generation from native headers, richer debugger features (watches, conditional breakpoints), a visual form/layout editor, and distribution through OS package managers.
+- **Now:** the compiler, language server, and per-platform native runtimes; a full object-oriented language with generics, async/await, optional chaining, file I/O, and date/time built in.
+- **Next:** HTTP and networking APIs; the `.buipkg` library-packaging format so plugin authors can ship first-class bindings; a visual layout editor.
+- **Later:** automated binding generation from native headers, richer debugger features (watches, conditional breakpoints), and distribution through OS package managers.
 
 Dates are not promised; follow the releases for what has actually shipped.
 
