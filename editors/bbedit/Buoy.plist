@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
-    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 
@@ -102,6 +101,7 @@
         <string>Or</string>
         <string>Override</string>
         <string>Packed</string>
+        <string>Partial</string>
         <string>Path</string>
         <string>Private</string>
         <string>Property</string>
@@ -164,19 +164,17 @@
     <key>Language Features</key>
     <dict>
         <key>Identifier and Keyword Character Class</key>
-        <string>A-Za-z0-9_</string>
+        <string><![CDATA[a-zA-Z0-9_#]]></string>
 
         <key>Comment Pattern</key>
-        <string><![CDATA[(?P<comment>(?:'''|//|')[^\n]*|/\*(?:[^*]|\*(?!/))*\*/)]]></string>
+        <string><![CDATA[(?:'''|//|')[^\n]*|/\*(?:[^*]|\*(?!/))*\*/]]></string>
 
         <key>String Pattern</key>
-        <string><![CDATA[(?P<string>"(?:[^"\\\n]|\\.)*")]]></string>
+        <string><![CDATA["(?:[^"\\\n]|\\.)*"]]></string>
 
         <key>Function Pattern</key>
         <string><![CDATA[(?P<function>(?:(?:Public|Private|Protected|Override|Async|Shared|Export)\s+)*(?:Function|Sub)\s+(?P<function_name>[A-Za-z_][A-Za-z0-9_]*)(?:\s+Of\s+[A-Za-z_][A-Za-z0-9_]*)?\s*\([^)]*\)(?:\s+As\s+[^\n]+)?)]]></string>
 
-        <key>Skip Pattern</key>
-        <string><![CDATA[(?P>string)|(?P>comment)]]></string>
     </dict>
 
 </dict>
