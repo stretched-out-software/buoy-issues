@@ -1,3 +1,19 @@
+# v0.6.0
+
+## New Features
+- feat: add buipkg for packaging 3rd party libraries and bui projects into cross-platform reusable code
+- feat: add release & retain to object
+
+## Bug Fixes
+- fix: repair regex patterns and fix line endings
+- fix: buoy now detects an invalid target and shows an appropriate error
+- fix: update the sqlite and zip packages are cross platform vendored
+- fix: wrapping a class reference in an Optional or Result no longer returns the wrong value
+- fix: make `Then` optional on `#If` and `#ElseIf` directives
+
+
+---
+
 # v0.5.0
 
 ## New Features
