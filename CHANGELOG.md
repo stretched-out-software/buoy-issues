@@ -1,3 +1,15 @@
+# v0.9.0
+
+## New Features
+- feat: Namespace
+
+## Bug Fixes
+- fix: fix a compile crash for Select Case with a string variable that's inside a method
+- fix: bug fixes
+
+
+---
+
 # v0.8.2
 
 
