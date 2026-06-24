@@ -1,3 +1,15 @@
+# v0.10.0
+
+## New Features
+- feat: Structures may now be placed inside classes
+- feat: Enums can now be embedded in structures
+
+## Bug Fixes
+- fix: fix enum and struct scoping inside a class
+
+
+---
+
 # v0.9.0
 
 ## New Features
