@@ -1,3 +1,21 @@
+# v0.11.0
+
+## New Features
+- feat: make it so modules can be embedded in packages, which ultimately lets us create controls
+- feat: add some more compiler directives. TargetDesktop, TargetConsole and TargetLibrary feat: if unspecified, the compiler now attempts to auto-detect if an app is a desktop or a console app so TargetDesktop and TargetConsole can be set correctly.
+- feat: Added a class for dealing with JSON.
+- feat: Added BinaryStream, TextInputStream, TextOutputStream
+- feat: Added Bytes class for dealing with raw data
+
+## Bug Fixes
+- fix: fixed an issue where if the LSP needed to guess what to do with an open #if statement, it would always choose mac/arm. Now it will choose the platform/cpu combination of the LSP.
+- fix: fixed a frontend compiler bug that caused autocompletion failures in LSP and therefore VSCode
+- fix: add icon and readme to the vscode extension
+- fix: Bytes now throws an OutOfBoundsException if you try to access something outside instead of crashing
+
+
+---
+
 # v0.10.0
 
 ## New Features
