@@ -1,3 +1,11 @@
+# v0.11.2
+
+## Bug Fixes
+- fix: the run command in VSCode now correctly detects when the project was built as an app bundle
+
+
+---
+
 # v0.11.1
 
 ## Bug Fixes
