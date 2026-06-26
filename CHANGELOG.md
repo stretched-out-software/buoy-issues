@@ -1,3 +1,11 @@
+# v0.12.1
+
+## Bug Fixes
+- fix: LSP now gets its word list from the token list
+
+
+---
+
 # v0.12.0
 
 ## New Features
