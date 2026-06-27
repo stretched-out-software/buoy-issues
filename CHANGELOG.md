@@ -1,3 +1,16 @@
+# v0.13.0
+
+## New Features
+- feat: Now using dmg for macOS distribution
+- feat: Canvas Drag and Drop
+- feat: make Point a built-in type and fix all the previous uses
+
+## Bug Fixes
+- fix: defensively copy FFI `As String` returns into owned buffers
+
+
+---
+
 # v0.12.1
 
 ## Bug Fixes
