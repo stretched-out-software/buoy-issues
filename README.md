@@ -1,5 +1,7 @@
 # Buoy - DRAFT
 
+<a href="https://www.buymeacoffee.com/stretch327" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me a Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 **A cross-platform, compiled programming language and UI framework with a BASIC-like syntax.**
 
 Buoy compiles to native binaries for macOS, Windows, and Linux. It pairs a modern, clean dialect of BASIC with a native UI framework, a full language server, and remote debugging — so you can write desktop applications once and ship real native executables on every platform.
