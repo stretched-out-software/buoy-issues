@@ -1,3 +1,13 @@
+# v0.13.1
+
+## Bug Fixes
+- fix: Standardized the macOS minimum deploy target across all libraries
+- fix: Strings stored in records and arrays are now initialized with ""
+- fix: strings are now initialized with ""
+
+
+---
+
 # v0.13.0
 
 
