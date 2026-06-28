@@ -1,3 +1,14 @@
+# v0.15.1
+
+## Bug Fixes
+- Fixed two Windows regressions around the hidpi change, listbox and cross-screen dragging.
+
+## Documentation
+- Add specs for preferences and the splitter control
+
+
+---
+
 # v0.15.0
 
 ## New Features
