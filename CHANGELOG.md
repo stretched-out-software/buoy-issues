@@ -1,3 +1,11 @@
+# v0.16.1
+
+## Bug Fixes
+- Refactored the declare lib linking and resolution code. See ffi-declare.md for more information.
+
+
+---
+
 # v0.16.0
 
 ## New Features
