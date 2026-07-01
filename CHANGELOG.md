@@ -1,3 +1,41 @@
+# v0.17.0
+
+## New Features
+- Added cross-platform Splitter control
+- Added a sema-synthesized read-only property to control instances for referencing their ParentWindow so control definitions don't need to carry that info with them.
+- Application folder now has an icon on macOS
+- Add Opening/Opened/Shown/Hidden/Activated/Deactivated lifecycle events sample and docs
+- Visibility + active window callbacks
+- Visibility + active window callbacks
+- Wire native visibility/active callbacks; Activated/Deactivated
+- Visibility + active window callbacks
+- Expose lifecycle hooks in declarative Window blocks
+- Control Shown/Hidden on Visible toggle
+- Dynamic AddSubview opens new subtree
+- Opening/Opened/Shown first-open orchestration
+
+## Bug Fixes
+- Fixed a bug in the errors around numeric + string code
+- Buoy version should stay consistent with the package now
+- Fixed an bug in class destruction which caused only the most derived class to fire its destructor
+- Fix a bug in the vscode plugin which caused properties without default values to be treated like blocks
+- Connect GTK lifecycle signals only once
+- Null lifecycle callbacks before DestroyWindow (teardown parity)
+- Dedup Shown/Hidden so each visibility transition fires once on all platforms
+- Null lifecycle callbacks before window destroy (teardown Hidden re-entry)
+- Remove app hide/unhide observers on unregister/teardown (use-after-free)
+
+## Documentation
+- Tutorial updates for features added since last revisions
+- Fixed a few notes about how things are implemented
+- Warn that RaiseShown/RaiseHidden bypass the visibility dedup gate
+- Add TODO(Task 7/8) to widen lifecycle-callback guard
+- Window/control lifecycle events spec + implementation plan
+- Add ScaleFactorChanged to Window docs
+
+
+---
+
 # v0.16.1
 
 ## Bug Fixes
