@@ -1,3 +1,11 @@
+# v0.17.1
+
+## Bug Fixes
+- Fixed an LSP bug that caused incorrect constructor errors
+
+
+---
+
 # v0.17.0
 
 ## New Features
